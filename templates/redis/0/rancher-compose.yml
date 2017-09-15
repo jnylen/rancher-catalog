@@ -1,0 +1,35 @@
+.catalog:
+  name: redis
+  version: 3.0.5-rancher1
+  description: |
+    Redis service
+  maintainer: "Raul Sanchez <rawmind@gmail.com>"
+  minimum_rancher_version: v0.59.0
+  uuid: redis-0
+  questions:
+    - variable: "volume_data"
+      description: "Data volume to persist redis data"
+      label: "Data volume:"
+      required: true
+      default: "/var/lib/docker/redis-data"
+      type: "string"
+    - variable: "volume_driver" 
+      label: "Driver volume:"
+      description: |
+        Choose the volume driver to use.
+      default: local
+      required: true
+      type: enum
+      options:
+        - local
+        - convoy-gluster
+redis-master:
+  scale: 1
+  retain_ip: true
+  health_check:
+    port: 6379
+    interval: 2000
+    unhealthy_threshold: 3
+    strategy: recreate
+    healthy_threshold: 2
+    response_timeout: 2000
