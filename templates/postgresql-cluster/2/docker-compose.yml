@@ -9,7 +9,7 @@ postgresql-master:
     io.rancher.container.pull_image: always
     io.rancher.sidekicks: postgresql-master-datavolume
   tty: true
-  image: sameersbn/postgresql:9.6
+  image: jnylen/postgresql:9.6-3
   stdin_open: true
   volumes_from:
   - postgresql-master-datavolume
@@ -26,7 +26,7 @@ postgresql-slave:
     io.rancher.scheduler.affinity:container_label_ne: io.rancher.stack_service.name=postgresql/postgresqlmaster
     io.rancher.sidekicks: postgresql-slave-datavolume
   tty: true
-  image: sameersbn/postgresql:9.6
+  image: jnylen/postgresql:9.6-3
   stdin_open: true
   links:
   - postgresql-master:master

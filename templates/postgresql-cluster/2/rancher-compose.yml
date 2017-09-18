@@ -1,6 +1,6 @@
 .catalog:
   name: "Postgresql"
-  version: "9.6"
+  version: "9.6-3"
   description: "Postgresql Master/Slave"
   questions:
     - variable: DB_USER
