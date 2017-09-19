@@ -1,5 +1,5 @@
 name: Postgresql Cluster
 description: |
-  Postgresql
+  Postgresql Cluster with master and scaleable slaves.
 version: 9.6
 category: Databases

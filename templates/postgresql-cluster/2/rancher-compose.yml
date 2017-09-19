@@ -1,7 +1,7 @@
 .catalog:
   name: "Postgresql"
-  version: "9.6-3"
-  description: "Postgresql Master/Slave with max_connections=300, shared_buffers=2.5GB, and ssd perf."
+  version: "9.6-4"
+  description: "Postgresql Master/Slave"
   questions:
     - variable: DB_USER
       description: "Db User"
