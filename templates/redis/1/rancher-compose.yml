@@ -7,12 +7,6 @@
   minimum_rancher_version: v0.59.0
   uuid: redis-0
   questions:
-    - variable: "volume_data"
-      description: "Data volume to persist redis data"
-      label: "Data volume:"
-      required: true
-      default: "/var/lib/docker/redis-data"
-      type: "string"
     - variable: "volume_driver"
       label: "Driver volume:"
       description: |
@@ -22,7 +16,6 @@
       type: enum
       options:
         - local
-        - convoy-gluster
 redis-master:
   scale: 1
   retain_ip: true

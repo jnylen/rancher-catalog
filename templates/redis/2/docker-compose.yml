@@ -13,7 +13,7 @@ redis-volume:
     io.rancher.container.hostname_override: container_name
     io.rancher.container.start_once: true
   volumes:
-  - ${volume_data}:/data
+  - /data
   volume_driver: ${volume_driver}
   entrypoint: /bin/true
   image: busybox
