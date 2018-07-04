@@ -8,5 +8,14 @@
       label: "ROOT Password"
       type: "string"
       required: true
+    - variable: ARANGO_STORAGE_ENGINE
+      description: "Storage Engine"
+      label: "Storage Engine"
+      type: "enum"
+      default: mmfiles
+      required: true
+      options:
+        - mmfiles
+        - rocksdb
 arangodb:
   scale: 1
