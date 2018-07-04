@@ -2,6 +2,7 @@ arangodb:
   restart: always
   environment:
     ARANGO_ROOT_PASSWORD: ${ARANGO_ROOT_PASSWORD}
+    ARANGO_STORAGE_ENGINE: ${ARANGO_STORAGE_ENGINE}
   image: arangodb/arangodb:3.3.11
   volumes_from:
   - arangodata
