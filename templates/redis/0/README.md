@@ -3,8 +3,7 @@
 
 ### Info:
 
- This template creates, scale in and scale out a multinodes broker (kafka) cluster on top of Rancher. The configuration is generated with confd from Rancher metadata. 
- Cluster size are variable after deployment, and get reconfigured if refresh interval > 0.
+ This template creates a redis server with a volume for /data.
  
 
 ### Usage:
