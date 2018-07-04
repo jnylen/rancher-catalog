@@ -1,7 +1,7 @@
 name: ArangoDB
 description: |
     ArangoDB Community Edition.
-version: 0
+version: 3.3.11
 maintainer: Joakim Nylen
 license: "Apache 2"
 projectURL: "https://github.com/arangodb/arangodb"
