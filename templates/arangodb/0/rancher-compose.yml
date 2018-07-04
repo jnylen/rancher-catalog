@@ -2,7 +2,6 @@
   name: "ArangoDB Community Edition"
   version: "3.3"
   description: "ArangoDB running as a single host"
-  uuid: arangodb-0
   questions:
     - variable: ARANGO_ROOT_PASSWORD
       description: "ROOT Password"

@@ -15,5 +15,6 @@ arangodata:
     io.rancher.container.start_once: true
   volumes:
   - /var/lib/arangodb3
+  - /var/lib/arangodb3-apps
   entrypoint: /bin/true
   image: busybox
