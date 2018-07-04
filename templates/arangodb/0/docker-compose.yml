@@ -10,6 +10,9 @@ arangodb:
   - 8529:8529/tcp
   tty: true
   stdin_open: true
+  labels:
+    io.rancher.container.pull_image: always
+    io.rancher.sidekicks: arangodata
 arangodata:
   labels:
     io.rancher.container.hostname_override: container_name
